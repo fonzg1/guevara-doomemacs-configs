@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: addgirlInfo
+# key: +girlInfo
+# binding:  C-c +
+# expand-env: ((yas-indent-line 'fixed) (yas-after-exit-snippet-hook #'whitespace-cleanup))
+# --
+$1
+Name: ${2:GIRL}
+Race: ${3:RACE}
+Age: ${4:AGE}
+Weblink: ${5:LINK}
+Created: ${6:`(format-time-string "%m-%d-%Y %H:%M:%S" (current-time))`}
+Contacted: ${7:NOYET}
+Replayed: ${8:NOYET}
+Fake: ${9:UNDERINVESTIGATION}
+$0
